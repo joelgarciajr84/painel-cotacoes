@@ -1,5 +1,5 @@
 <?php 
-
+//Conexao com o Banco
 require("conecta_banco.php");
 
 class Extracao extends ConectaBanco {
