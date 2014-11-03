@@ -1,12 +1,8 @@
 <?php 
-ini_set('display_startup_errors',0);
-ini_set('display_errors',0);
-error_reporting(0);
-require("Extracao.class.php");
+
+	require("Extracao.class.php");
 
 	$extracao = new Extracao();
-
-	//var_dump($extracao);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,8 +25,8 @@ require("Extracao.class.php");
 
 		<p id="topo" align="center"> Dolar Agora </p id="topo">
 
-		<p align="center" id="mostravalor"><?php echo "R$ ". $extracao->getValorReal(); ?></p>
-		<p align="center" id ="situacaoatual"> Caindo </p>
+		<p align="center" id="mostravalor"><?php echo "R$ ". $extracao->getValorDolar(); ?></p>
+		<p align="center" id ="situacaoatual"> <?php echo $extracao->statusDolar; ?> </p>
 
 	</div>
 	<div id="euro">
