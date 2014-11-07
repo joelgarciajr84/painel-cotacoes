@@ -1,7 +1,7 @@
 <html>
   <head>
   <!-- Le styles -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 40px;
@@ -35,7 +35,7 @@
       }
 
     </style>
-    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -50,6 +50,7 @@
   </head>
   <body>
 <h1 align="center">Painel de Cotacoes</h1>
+
 <br>
   <form class="form-signin" action="validacao.php" method="post">
 <fieldset>
@@ -57,9 +58,13 @@
 	<input class="input-block-level" placeholder="Usuario" type="text" name="usuario" id="txUsuario" maxlength="25" />
 	<label for="txSenha"></label>
 	<input  class="input-block-level" placeholder="Senha" type="password" name="senha" id="txSenha" />
+  
 
 	<button value="Entrar" class="btn btn-large btn-primary"  type="submit">Entrar </button>
+<br><br>
+  
 </fieldset>
+<p align="center"><?php echo "Seu IP: " . $_SERVER['SERVER_ADDR']; ?></p>
 </form>
 </div>
 </body>
