@@ -1,7 +1,7 @@
 <?php
 
-include ("./admin/conecta_banco.php");
-include ("./admin/atualizador.php");
+require ("./admin/conecta_banco.php");
+require ("./admin/atualizador.php");
 
 ?>
 <html lang="en">
